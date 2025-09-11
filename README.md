@@ -1,4 +1,4 @@
-# 🧠 UIC Chess Neural Network (PyTorch)
+# 🧠 Chess Neural Network (PyTorch)
 
 A **residual convolutional neural network** that predicts the next move’s **from** and **to** squares (0–63) from a given chess board state.
 Developed as part of an **Undergraduate Research Assistantship** at the **University of Illinois Chicago** (Dept. of Mathematics).
