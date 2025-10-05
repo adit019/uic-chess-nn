@@ -1,17 +1,17 @@
-# 🧠 Chess Neural Network (PyTorch)
+#  Chess Neural Network (PyTorch)
 
 A **residual convolutional neural network** that predicts the next move’s **from** and **to** squares (0–63) from a given chess board state.
 Developed as part of an **Undergraduate Research Assistantship** at the **University of Illinois Chicago** (Dept. of Mathematics).
 
 ---
 
-## 🎯 Purpose
+##  Purpose
 Explore board encoding and deep learning for chess move prediction.
 Demonstrates an end-to-end ML workflow: data prep, tensor encoding, model design, training/validation, and inference.
 
 ---
 
-## 🧠 Skills Demonstrated
+##  Skills Demonstrated
 - PyTorch, CNNs, residual blocks, CrossEntropy
 - Parsing SAN, dataset slicing (`start`/`end`/`default`)
 - Modular code; checkpoints; validation metrics
@@ -19,7 +19,7 @@ Demonstrates an end-to-end ML workflow: data prep, tensor encoding, model design
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 ```
 src/
   utils.py     # board encoding & SAN parsing
@@ -41,7 +41,7 @@ pip install -r requirements.txt
 
 ---
 
-## 🏋️ Train
+##  Train
 ```bash
 python -m src.train --csv /path/to/chess_games_selected.csv \
   --variation start --num_moves 10 \
@@ -51,7 +51,7 @@ python -m src.train --csv /path/to/chess_games_selected.csv \
 
 ---
 
-## 🔮 Predict
+##  Predict
 ```bash
 python -m src.predict --weights chessnet.pth \
   --an "1. e4 e5 2. Nf3 Nc6 3. Bc4 Bc5"
@@ -66,11 +66,11 @@ Top-to squares:
 
 ---
 
-## 📝 Notes
+##  Notes
 Educational baseline; extend with legality masks or a value head.
 
 ---
 
-## 📜 License
+##  License
 MIT License
 
